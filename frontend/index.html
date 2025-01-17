@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="script/app.js"></script>
+  </head>
+
+  <body class="index">
+    <header>
+      <div class="centerHeader">
+        <div class="appName">
+          <h1>ZdravýMazlíček</h1>
+        </div>
+        <nav>
+          <a href="index.html">Domů</a>
+          <a href="history.html">Historie</a>
+          <a href="articles.html">Články</a>
+          <a href="about_app.html">O aplikaci</a>
+          <a href="sign_in_register.html">Přihlásit se/registrovat se</a>
+        </nav>
+      </div>
+    </header>
+
+    <article>
+      <p>
+        Zdravý Mazlíček je aplikace, která pomáhá majitelům domácích zvířat
+        rychle a snadno diagnostikovat zdravotní příznaky jejich mazlíčků.
+      </p>
+    </article>
+
+    <div class="mainAsideLayout">
+      <aside>
+        <div>Vyběr mazlíčka</div>
+        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+        <div>Zadání příznaků</div>
+        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+        <div>Vyhodnocení</div>
+        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+        <div>Výsledky a doporučení</div>
+      </aside>
+      <main>
+        <div class="main">
+          <div class="mainButtonContainer">
+            <a href="search_page.html">
+              <button class="mainButton">
+                <img src="images/dog.jpg" />
+                <span>Pes</span>
+              </button>
+            </a>
+            <a href="search_page.html">
+              <button class="mainButton">
+                <img src="images/cat.jpg" />
+                <span>Kočka</span>
+              </button>
+            </a>
+            <a href="search_page" class="disabled-link">
+              <button class="mainButton">
+                <span>Už brzy</span>
+              </button>
+            </a>
+            <a href="search_page" class="disabled-link">
+              <button class="mainButton">
+                <span>Už brzy </span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

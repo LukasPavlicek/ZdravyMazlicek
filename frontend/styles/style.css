@@ -1,0 +1,412 @@
+/*Styles for every html page*/
+body {
+  margin: 0;
+}
+main {
+  width: 70%;
+  padding: 10px;
+}
+header {
+  padding: 5px;
+  min-width: 1200px;
+  background-color: #95dd90;
+}
+.centerHeader {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: auto max-content;
+  margin: 0 auto;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background-color: #79c574;
+  border-radius: 50px;
+  padding-right: 30px;
+  height: 50px;
+}
+.appName {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+nav > a {
+  margin-left: 30px;
+  font-size: 17px;
+}
+.mainAsideLayout {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+aside {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+}
+header {
+  margin-bottom: 50px;
+}
+
+/*Styles for index page*/
+body.index article {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+body.index article > p {
+  font-size: 26px;
+}
+
+body.index .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+body.index .mainButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+body.index .mainButton {
+  width: 200px;
+  height: 250px;
+  padding: 0;
+  background-color: #fcfcfc;
+  cursor: pointer;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+body.index .mainButton img {
+  width: 100%;
+  height: 80%;
+}
+
+body.index .mainButton span {
+  font-size: 20px;
+  text-align: center;
+}
+
+body.index .mainLayout {
+  display: flex;
+  justify-content: center;
+}
+
+body.index .fa-arrow-down {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.index .mainAsideLayout > aside > div {
+  font-size: 30px;
+}
+
+/*Styles for search page */
+body.search_page .mainAsideLayout {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+body.search_page label {
+  font-size: 25px;
+}
+body.search_page .mainAsideLayout > aside > div {
+  font-size: 25px;
+}
+body.search_page #inputField {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  margin: 20px 0px;
+  text-align: center;
+}
+body.search_page #inputField::placeholder {
+  font-style: italic;
+  opacity: 0.6;
+}
+body.search_page #searchButtons {
+  display: grid;
+  grid-template-columns: 47% 47%;
+}
+
+body.search_page #submitButton {
+  height: 45px;
+  width: 120px;
+  font-size: 17px;
+  border-radius: 15px;
+}
+body.search_page #addSymptomButton {
+  height: 45px;
+  width: 120px;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+body.search_page aside {
+  background-color: #95dd90;
+  border-radius: 15px;
+  box-shadow: 1px 7px 10px #79c574;
+}
+
+/*Styles for results page and history page and articles page*/
+
+body.results .list-header,
+body.history .list-header,
+body.articles .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #79c574;
+  padding: 10px;
+  border: 1px solid #579453;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #579453;
+}
+
+body.results .list-header .header-section,
+body.history .list-header .header-section,
+body.articles .list-header .header-section {
+  text-align: left;
+  padding: 0 10px;
+  flex: 1;
+}
+
+body.results .list-header .header-section:nth-of-type(1),
+body.history .list-header .header-section:nth-of-type(1),
+body.articles .list-header .header-section:nth-of-type(1) {
+  flex: 0.5;
+}
+
+body.results .list-header .header-section:nth-of-type(2),
+body.history .list-header .header-section:nth-of-type(2) {
+  flex: 1.6;
+}
+
+body.results .list-header .header-section:nth-of-type(3) {
+  flex: 1.5;
+}
+
+body.results .list-header .header-section:nth-of-type(4) {
+  flex: 0.9;
+}
+
+body.results .custom-list,
+body.history .custom-list,
+body.articles .custom-list {
+  list-style-type: none;
+  background-color: #95dd90;
+  border: 1px solid #79c574;
+  box-shadow: 1px 5px 8px #79c574;
+  border-radius: 15px;
+  height: 80px;
+  padding-left: 0;
+}
+
+body.results .custom-list li,
+body.history .custom-list li,
+body.articles .custom-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+body.results .item-section,
+body.history .item-section,
+body.articles .item-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px;
+  text-align: left;
+  border-right: 1px solid #000;
+  height: 100%;
+  font-size: 17px;
+}
+
+body.results .item-section:nth-of-type(1),
+body.history .item-section:nth-of-type(1) {
+  flex: 0.5;
+}
+
+body.results .item-section:nth-of-type(2),
+body.history .item-section:nth-of-type(2) {
+  flex: 1.5;
+}
+
+body.results .item-section:nth-of-type(3),
+body.history .item-section:nth-of-type(3) {
+  flex: 1.5;
+  border-right: none;
+}
+
+body.results .severity,
+body.history .severity {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-right: 10px;
+}
+body.results .severity-box1,
+.severity-box2,
+.severity-box3,
+body.histry .severity-box1,
+.severity-box2,
+.severity-box3 {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  background-color: white;
+}
+body.results .severity-box1,
+body.history .severity-box1 {
+  background-color: #95ff00;
+}
+body.results .severity-box2,
+body.history .severity-box2 {
+  background-color: #ff5e00;
+}
+body.results .severity-box3,
+body.history .severity-box3 {
+  background-color: #ff0000;
+}
+
+/*styles for results page only*/
+body.results #histroyButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#displayDate {
+  margin: 0px 10px;
+}
+body.history .list-header .header-section:nth-of-type(3) {
+  flex: 1.55;
+}
+
+body.history .list-header .header-section:nth-of-type(4) {
+  flex: 0.6;
+}
+
+/*Styles for articles page*/
+body.articles .list-header .header-section:nth-of-type(2) {
+  flex: 0.6;
+}
+
+body.articles .list-header .header-section:nth-of-type(3) {
+  flex: 1.55;
+}
+
+body.articles .item-section:nth-of-type(1) {
+  flex: 0.63;
+}
+
+body.articles .item-section:nth-of-type(2) {
+  flex: 0.7;
+}
+
+body.articles .item-section:nth-of-type(3) {
+  flex: 1.55;
+  border-right: none;
+}
+/*styles for about app page*/
+
+body.about_app .content {
+  background-color: #95dd90;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 1px 5px 8px #79c574;
+}
+body.about_app main h1 {
+  background-color: #79c574;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 1px 5px 8px #579453;
+}
+
+/*for every page except index*/
+body.about_app main,
+body.history main,
+body.articles main,
+body.results main,
+body.sign_in_register main {
+  margin: 0 auto;
+}
+
+/*styles for sign in or register page*/
+
+body.sign_in_register .container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 7px 10px #79c574;
+  width: 300px;
+}
+body.sign_in_register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body.sign_in_register form {
+  display: flex;
+  flex-direction: column;
+}
+body.sign_in_register label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+body.sign_in_register input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #79c574;
+  border-radius: 5px;
+}
+body.sign_in_register button {
+  background-color: #95dd90;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+body.sign_in_register button:hover {
+  background-color: #79c574;
+}
+body.sign_in_register .switch {
+  text-align: center;
+  margin-top: 10px;
+}
+body.sign_in_register .switch a {
+  color: #79c574;
+  text-decoration: none;
+}
+body.sign_in_register main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}

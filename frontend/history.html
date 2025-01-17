@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <title>History page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script/app.js"></script>
+  </head>
+
+  <body class="history">
+    <header>
+      <div class="centerHeader">
+        <div class="appName">
+          <h1>ZdravýMazlíček</h1>
+        </div>
+        <nav>
+          <a href="index.html">Domů</a>
+          <a href="history.html">Historie</a>
+          <a href="articles.html">Články</a>
+          <a href="about_app.html">O aplikaci</a>
+          <a href="sign_in_register.html">Přihlásit se/registrovat se</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="list-header">
+        <div class="header-section">Nazev:</div>
+        <div class="header-section">Popis:</div>
+        <div class="header-section">Doporučení:</div>
+        <div class="header-section">Závažnost:</div>
+      </div>
+      <ul class="custom-list">
+        <li>
+          <div class="item-section">Nazev1</div>
+          <div class="item-section">Popis1</div>
+          <div class="item-section">Doporučení1</div>
+          <div class="severity">
+            <span class="severity-box1 severity-box2 severity-box3"></span>
+            <span class="severity-box2 severity-box3"></span>
+            <span class="severity-box3"></span>
+          </div>
+          <p id="displayDate">Datum není uložen</p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
