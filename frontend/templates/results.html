@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Results page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <script defer src="../static/js/app.js"></script>
+  <script defer src="../static/js/results_render.js"></script>
+</head>
+
+<body class="results">
+<header>
+  <div class="centerHeader">
+    <div class="appName"><h1>ZdravýMazlíček</h1></div>
+    <nav>
+  <a href="/">Domů</a>
+  <a href="history.html">Historie</a>
+  <a href="articles.html">Články</a>
+  <a href="about_app.html">O aplikaci</a>
+
+  <!-- Tento odkaz se skryje po přihlášení -->
+  <a id="loginLink" href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+
+  <!-- Tyto dva se objeví až po přihlášení -->
+  <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+  <a id="logoutLink"  href="#"          class="hidden">Odhlásit se</a>
+</nav>
+
+  </div>
+</header>
+
+<main>
+  <div class="list-header">
+    <div class="header-section">Název</div>
+    <div class="header-section">Popis</div>
+    <div class="header-section">Závažnost</div>
+  </div>
+
+  <ul id="resultList" class="custom-list"></ul>
+</main>
+</body>
+</html>

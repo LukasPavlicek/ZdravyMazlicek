@@ -39,18 +39,20 @@ CREATE TABLE Pets (
     FOREIGN KEY (user_id) REFERENCES Users(id)
 );
 
-CREATE TABLE diagnosis_history  (
+CREATE TABLE diagnosis_history (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
-    pet_id INT NOT NULL,
+    pet_id INT NULL,                        -- může být NULL, pokud žádný zaregistrovaný mazlíček
+    pet_name VARCHAR(255) NULL,             -- jméno mazlíčka nebo obecný název („Pes“, „Kočka“)
     disease_id INT NOT NULL,
-    symptoms TEXT,
+    symptoms TEXT NOT NULL,                 -- JSON / čárkami oddělený seznam ID příznaků
     diagnosis TEXT,
     search_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES Users(id),
-    FOREIGN KEY (pet_id) REFERENCES Pets(id),
-	FOREIGN KEY (disease_id) REFERENCES Diseases(id)
+    FOREIGN KEY (user_id)   REFERENCES Users(id),
+    FOREIGN KEY (pet_id)    REFERENCES Pets(id),
+    FOREIGN KEY (disease_id) REFERENCES Diseases(id)
 );
+
 
 CREATE TABLE Articles (
     id INT AUTO_INCREMENT PRIMARY KEY,

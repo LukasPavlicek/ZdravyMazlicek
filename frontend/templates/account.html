@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Můj účet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <script defer src="../static/js/app.js"></script>
+  <script defer src="../static/js/account.js"></script>
+</head>
+<body class="about_app">
+  <header>
+    <div class="centerHeader">
+      <div class="appName"><h1>ZdravýMazlíček</h1></div>
+     <nav>
+  <a href="/">Domů</a>
+  <a href="history.html">Historie</a>
+  <a href="articles.html">Články</a>
+  <a href="about_app.html">O aplikaci</a>
+
+  <!-- Tento odkaz se skryje po přihlášení -->
+  <a id="loginLink" href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+
+  <!-- Tyto dva se objeví až po přihlášení -->
+  <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+  <a id="logoutLink"  href="#"          class="hidden">Odhlásit se</a>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+    <h1>Můj účet</h1>
+    <p>E‑mail: <strong id="userEmail"></strong></p>
+
+    <h2>Změna hesla</h2>
+    <form id="passForm">
+      <input type="password" name="newPassword" placeholder="Nové heslo" required>
+      <input type="password" name="confirmNewPassword" placeholder="Potvrdit heslo" required>
+      <button type="submit">Uložit</button>
+    </form>
+
+    <h2>Moji mazlíčci</h2>
+    <ul id="petList"></ul>
+
+    <h3>Přidat mazlíčka</h3>
+    <form id="addPetForm">
+      <input name="petName" placeholder="Jméno" required>
+      <input name="species" placeholder="Druh (pes, kočka…)" required>
+      <input name="age" type="number" placeholder="Věk">
+      <button type="submit">Přidat</button>
+    </form>
+  </main>
+</body>
+</html>

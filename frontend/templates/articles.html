@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Články Zdravý Mazlíček</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <script defer src="../static/js/app.js"></script>
+  <script defer src="../static/js/articles_fetch.js"></script>
+</head>
+
+<body class="articles">
+<header>
+  <div class="centerHeader">
+    <div class="appName"><h1>ZdravýMazlíček</h1></div>
+    <nav>
+      <a href="/">Domů</a>
+      <a href="history.html">Historie</a>
+      <a href="articles.html">Články</a>
+      <a href="about_app.html">O&nbsp;aplikaci</a>
+
+      <!-- auth odkazy vyřeší app.js -->
+      <a id="loginLink"   href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+      <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+      <a id="logoutLink"  href="#"            class="hidden">Odhlásit se</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h1>Články</h1>
+
+  <!-- seznam bude doplněn JS skriptem -->
+  <ul id="articleList" class="custom-list"></ul>
+</main>
+</body>
+</html>

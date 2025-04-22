@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <script defer src="../static/js/search_symptoms.js"></script>
+  </head>
+
+  <body class="search_page">
+    <header>
+      <div class="centerHeader">
+        <div class="appName"><h1>ZdravýMazlíček</h1></div>
+        <nav>
+  <a href="/">Domů</a>
+  <a href="history.html">Historie</a>
+  <a href="articles.html">Články</a>
+  <a href="about_app.html">O aplikaci</a>
+
+  <!-- Tento odkaz se skryje po přihlášení -->
+  <a id="loginLink" href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+
+  <!-- Tyto dva se objeví až po přihlášení -->
+  <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+  <a id="logoutLink"  href="#"          class="hidden">Odhlásit se</a>
+</nav>
+
+      </div>
+    </header>
+
+    <div class="mainAsideLayout">
+      <main>
+        <div class="mainLayout">
+          <label for="symptomSelect">Vyber příznak mazlíčka:</label><br />
+          <div class="insertSpace">
+            <select id="symptomSelect"></select><br />
+          </div>
+
+          <div id="halfSearchButtons">
+              <div id="searchButtons">
+                <button id="addSymptomBtn">Přidat příznak</button>
+                <button id="submitBtn" class="pushRight">Vyhodnotit</button>
+              </div>
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div>Seznam vybraných příznaků:</div>
+        <ul id="selectedList" class="selectedSymptoms"></ul>
+      </aside>
+    </div>
+  </body>
+</html>

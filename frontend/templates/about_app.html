@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>O aplikaci Zdravý Mazlíček</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <script defer src="../static/js/app.js"></script>
+</head>
+<body class="about_app">
+<header>
+  <div class="centerHeader">
+    <div class="appName"><h1>ZdravýMazlíček</h1></div>
+    <nav>
+      <a href="/">Domů</a>
+      <a href="history.html">Historie</a>
+      <a href="articles.html">Články</a>
+      <a href="about_app.html">O&nbsp;aplikaci</a>
+
+      <!-- auth odkazy vyřeší app.js -->
+      <a id="loginLink"   href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+      <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+      <a id="logoutLink"  href="#"            class="hidden">Odhlásit se</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>O aplikaci Zdravý Mazlíček</h1>
+
+  <div class="content">
+    <p><strong>Zdravý Mazlíček</strong> je pomocník pro majitele domácích zvířat,
+       který na základě zadaných příznaků a dostupných veterinárních zdrojů
+       doporučí možné onemocnění a další postup.</p>
+
+    <h2>Jak to funguje?</h2>
+    <ul>
+      <li>Vyberete druh mazlíčka (pes, kočka… nebo konkrétního mazlíčka
+          uloženého ve Vašem profilu).</li>
+      <li>Přidáte příznaky ze seznamu – aplikace pracuje pouze
+          s&nbsp;příznaky evidovanými v naší databázi.</li>
+      <li>Aplikace porovná příznaky s&nbsp;nejčastějšími onemocněními
+          a&nbsp;zobrazí seznam diagnóz seřazený podle shody a závažnosti.</li>
+      <li>Výsledek můžete uložit do své historie a&nbsp;kdykoliv se k&nbsp;němu vrátit.</li>
+    </ul>
+
+    <h2>Důležité upozornění</h2>
+    <p>
+      <em>Zdravý Mazlíček nenahrazuje vyšetření veterinárním lékařem.</em><br>
+      Výstup aplikace slouží pouze jako rychlé <strong>doporučení</strong>
+      a orientační informace. Pokud má Váš mazlíček zdravotní potíže,
+      kontaktujte co nejdříve <strong>profesionálního veterináře</strong>.
+    </p>
+  </div>
+</main>
+</body>
+</html>

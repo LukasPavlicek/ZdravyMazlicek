@@ -1,0 +1,16 @@
+diseases_name,diseases_description,severity
+Infekce horních cest dýchacích,"Infekce virového nebo bakteriálního původu postihující nos a hrdlo.",low
+Infekce dolních cest dýchacích,"Infekce postihující plíce a dolní dýchací cesty.",high
+Gastrointestinální infekce,"Virové či bakteriální infekce trávicího systému.",low
+Parazitóza,"Infekce způsobená vnitřními parazity, vyžaduje odčervení.",medium
+Akut pankreatitida,"Náhlý zánět slinivky břišní vyžadující urgentní léčbu.",high
+Chronická onemocnění jater,"Dlouhodobé poškození jater s postupnou ztrátou funkce.",high
+Zubní onemocnění,"Infekce a záněty dutiny ústní, zubů a dásní.",medium
+Kožní infekce,"Infekce kůže způsobené bakteriemi či houbami.",low
+Infekce močových cest,"Bakteriální infekce močového systému.",medium
+Renální onemocnění,"Progresivní zhoršení funkce ledvin.",high
+Diabetes mellitus,"Porucha metabolismu glukózy vyžadující celoživotní péči.",medium
+Srdeční choroby,"Stavy ovlivňující funkci srdce a krevní oběh.",high
+Artritida,"Zánět kloubů způsobující bolest a omezenou pohyblivost.",medium
+Alergie,"Reakce imunitního systému na vnější alergeny.",low
+Onemocnění trávicí soustavy,"Poruchy trávicího ústrojí různé závažnosti.",medium

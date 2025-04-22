@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moje historie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <script defer src="../static/js/app.js"></script>
+  <script defer src="../static/js/history.js"></script>
+</head>
+<body class="history">
+  <header>
+    <div class="centerHeader">
+      <div class="appName"><h1>ZdravýMazlíček</h1></div>
+      <nav>
+        <a href="/">Domů</a>
+        <a href="articles.html">Články</a>
+        <a href="about_app.html">O aplikaci</a>
+        <a id="accountLink" href="account.html" class="hidden">Můj účet</a>
+        <a id="logoutLink" href="#" class="hidden">Odhlásit se</a>
+        <a id="loginLink"  href="sign_in_register.html">Přihlásit se/Registrovat se</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Moje historie</h1>
+
+    <table id="historyTable" class="custom-list">
+      <thead>
+        <tr>
+          <th>Datum</th>
+          <th>Mazlíček</th>
+          <th>Diagnóza</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p id="noHistory" style="display:none;color:#333;font-style:italic;"></p>
+  </main>
+</body>
+</html>
